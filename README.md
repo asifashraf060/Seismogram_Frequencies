@@ -19,3 +19,14 @@ using the EMD method. This process is called sifting which was first developed b
 Huang et al. (1998). We use python module ‘pyEMD’ 
 (available at https://pyemd.readthedocs.io/en/latest/index.html) for computing this process 
 which utilizes the algorithm developed by Rilling et al. (2003).
+
+Code description:
+
+get_eq_USGS_IRIS : It downloads earthquake information based on spatial (lat, lon) and 
+                   time constraints (day, month, year) from USGS. These information is then
+                   used to download miniseeds from IRIS. It's downloaded to the defined directory.
+                    
+apply_EMD        : This piece of code applies HHT to the downloaded miniseeds around 10 seconds of
+                   the peak ground accelaration.
+                   
+hht_tools        : This script has the required tools to apply HHT on seismograms
