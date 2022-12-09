@@ -1,4 +1,4 @@
-# EarthquakeFrequency
+# Frequency decomposition of seismograms
 
 This code gets earthquake information using python wrapper ‘libcomcat’ 
 developed by the USGS (available at https://github.com/usgs/libcomcat) 
